@@ -1,0 +1,188 @@
+.container {
+  position: absolute;
+  background-color: #f0f0f0;
+  height: 500px;
+  width: 500px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 16px 16px 10px #d7d7d7;
+          box-shadow: 16px 16px 10px #d7d7d7;
+  border-radius: 20px;
+}
+.container .face {
+  position: relative;
+  height: 250px;
+  width: 60px;
+  background-color: #fce2c4;
+  left: 220px;
+  top: 100px;
+  border: 4px solid #ffa945;
+  border-bottom: none;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+.container .face::before {
+  content: "";
+  height: 14px;
+  width: 14px;
+  background-color: #fce2c4;
+  border-left: 6px solid #ffa945;
+  border-bottom: 4px solid #ffa945;
+  border-bottom-left-radius: 10px;
+  -webkit-transform: skew(-40deg);
+          transform: skew(-40deg);
+  position: absolute;
+  top: 170px;
+  left: -12px;
+}
+.container .face::after {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-color: #fce2c4;
+  top: 80px;
+  left: 56px;
+  border-radius: 50%;
+  border: 4px solid #ffa945;
+  border-top: none;
+  border-left: none;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+.container .nose {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #fce2c4;
+  border: 4px solid #ffa945;
+  left: 172px;
+  bottom: 90px;
+  border-right: none;
+  border-radius: 14px 0 0 14px;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+  z-index: 1;
+}
+.container .nose::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 30px;
+  background-color: #fce2c4;
+  border-top: 4px solid #ffa945;
+  left: 30px;
+  top: -4px;
+}
+.container .eye {
+  position: relative;
+  height: 44px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+  left: 206px;
+  bottom: 188px;
+  border: 3px solid black;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+  z-index: 0;
+}
+.container .eye::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 10px;
+  background-color: black;
+  border-radius: 50%;
+  left: 14px;
+  top: 22px;
+  -webkit-transform: rotate(16deg);
+          transform: rotate(16deg);
+}
+.container .eye::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  left: 18px;
+  top: 24px;
+  border-radius: 50%;
+}
+.container .eye1 {
+  width: 40px;
+  height: 40px;
+  bottom: 224px;
+  left: 234px;
+  z-index: 5;
+}
+.container .eye1::before {
+  top: 12px;
+}
+.container .eye1::after {
+  top: 14px;
+}
+.container .hair {
+  position: relative;
+  bottom: 252px;
+  left: 10px;
+  z-index: 50;
+}
+.container .hair > div:nth-child(1) {
+  position: absolute;
+  height: 30px;
+  width: 100px;
+  border-top: 20px solid green;
+  left: 180px;
+  bottom: 40px;
+  border-radius: 50px 40px 0 0;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+.container .hair > div:nth-child(2) {
+  position: absolute;
+  height: 30px;
+  width: 100px;
+  border-top: 20px solid green;
+  left: 200px;
+  bottom: 40px;
+  border-radius: 50px 40px 0 0;
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+.container .hair > div:nth-child(3) {
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  border-top: 20px solid green;
+  left: 220px;
+  bottom: 50px;
+  border-radius: 50px 40px 0 0;
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
+}
+.container .hair > div:nth-child(4) {
+  position: absolute;
+  height: 30px;
+  width: 100px;
+  border-top: 20px solid green;
+  left: 200px;
+  bottom: 20px;
+  border-radius: 50px 40px 0 0;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+.container .hair > div:nth-child(5) {
+  position: absolute;
+  height: 30px;
+  width: 50px;
+  border-top: 20px solid green;
+  left: 260px;
+  bottom: 20px;
+  border-radius: 50px 40px 0 0;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+/*# sourceMappingURL=master.css.map */
